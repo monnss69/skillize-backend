@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "nodemon server.ts",
+    "dev": "nodemon api/index.ts",
     "build": "tsc",
-    "start": "node server.ts"
+    "start": "node api/index.ts"
   },
   "dependencies": {
     "@types/cors": "^2.8.17",
