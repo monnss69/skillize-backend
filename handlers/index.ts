@@ -37,7 +37,7 @@ export const aiCreateWithQuestionHandler: RequestHandler = async (req, res) => {
     try {
         const completion = await openai.chat.completions.create({
             messages: [{ role: "user", content: formattedPrompt }],
-            model: "gpt-4o-mini",
+            model: "o4-mini",
         });
 
         const messageContent = completion.choices[0].message.content;
@@ -96,7 +96,7 @@ export const aiCreateWithQuestionAndAnswerHandler: RequestHandler = async (req, 
     try {
         const completion = await openai.chat.completions.create({
             messages: [{ role: "user", content: formattedPrompt }],
-            model: "gpt-4o-mini",
+            model: "o4-mini",
         });
 
         const messageContent = completion.choices[0].message.content;
